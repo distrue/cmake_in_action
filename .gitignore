@@ -1,11 +1,13 @@
 extern/
 lib/
+bin/
+build/
 
 CMakeFiles/
 cmake-build-debug/
 *.cmake
 CMakeCache.txt
-Makefile
+*/Makefile
 *.cbp
 *.a
 

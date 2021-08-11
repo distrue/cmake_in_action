@@ -2,10 +2,10 @@ cmake_minimum_required(VERSION 3.19)
 
 SET(CMAKE_CXX_STANDARD 11)
 SET(BINARY ${CMAKE_PROJECT_NAME}_tst)
-SET(EXECUTABLE_OUTPUT_PATH ${CMAKE_SOURCE_DIR} )
+SET(EXECUTABLE_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/bin )
 
 file(GLOB_RECURSE TEST_SOURCES LIST_DIRECTORIES false *.h *.cpp)
 SET(SOURCES ${TEST_SOURCES})
 
 add_executable(${BINARY} ${TEST_SOURCES})
-target_link_libraries(${BINARY} gtest gtest_main ${CMAKE_PROJECT_NAME}_lib)
+target_link_libraries(${BINARY} gtest gtest_main ${CMAKE_SOURCE_DIR}/lib)
